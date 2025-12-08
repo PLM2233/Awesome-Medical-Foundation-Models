@@ -1,105 +1,139 @@
-# <p align=center>:fire:`Awesome Medical Foundation Models`:fire:</p>
+# <p align=center>:fire:`Medical Foundation Models 2024-2025`:fire:</p>
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)
 
-🔥🔥 A comprehensive collection of medical foundation models organized by learning paradigm and architecture 🔥🔥
+🔥🔥 Latest medical foundation models from 2024-2025 across diverse imaging modalities 🔥🔥
 
 ## Overview
 
-This repository provides a curated list of foundation models in medical imaging and healthcare, organized by their core architectural approaches:
-- **Visual Self-Supervised Learning**: Models pretrained using self-supervision on medical images
-- **Contrastive Learning**: Vision-language models using contrastive objectives
-- **Mixed/Hybrid Architecture**: Models combining multiple learning paradigms
-- **Medical MLLMs**: Multimodal large language models for medical applications
+This repository provides the latest curated list of foundation models in medical imaging released during 2024-2025, organized by imaging modality:
+- **MRI**: Magnetic Resonance Imaging models (2D and 3D)
+- **CT**: Computed Tomography models (2D and 3D)
+- **Ultrasound**: Ultrasound imaging models
+- **Fundus**: Retinal/Fundus imaging models
+- **Histopathology**: Digital pathology and histopathology models
+- **X-ray**: Chest X-ray and radiography models
+- **Dermatology**: Skin disease and dermatology imaging models
+- **Microscopy**: Electron and cellular microscopy models
 
 We strongly encourage authors of relevant works to make a pull request and add their paper's information.
 
 ## Contents
-- [Visual Self-Supervised Learning](#visual-self-supervised-learning)
-- [Contrastive Learning](#contrastive-learning)
-- [Mixed/Hybrid Architecture](#mixedhybrid-architecture)
-- [Medical Multimodal Large Language Models (MLLM)](#medical-multimodal-large-language-models-mllm)
-  - [General Medical MLLMs](#general-medical-mllms)
-  - [Specialized Medical MLLMs](#specialized-medical-mllms)
+- [MRI Models](#mri-models)
+- [CT Models](#ct-models)
+- [Ultrasound Models](#ultrasound-models)
+- [Fundus Models](#fundus-models)
+- [Histopathology Models](#histopathology-models)
+- [X-ray Models](#x-ray-models)
+- [Dermatology Models](#dermatology-models)
+- [Microscopy Models](#microscopy-models)
 
 ---
 
 ## Papers
 
-### Visual Self-Supervised Learning
+### MRI Models
 
-| Year | Modality | Title | Paper | Code | Weights | Method |
-|------|----------|-------|-------|------|---------|--------|
-| 2023 | Pathology | Virchow: A Million-Slide Digital Pathology Foundation Model | [arXiv](https://arxiv.org/abs/2309.07778) | - | ✅ | Development |
-| 2023 | Retinal | A foundation model for generalizable disease detection from retinal images | [Nature](https://www.nature.com/articles/s41586-023-06555-x) | [GitHub](https://github.com/rmaphoh/RETFound_MAE) | ✅ | Development |
-| 2023 | Multi-modal | LVM-Med: Learning Large-Scale Self-Supervised Vision Models for Medical Imaging via Second-order Graph Matching | [arXiv](https://arxiv.org/abs/2306.11925) | [GitHub](https://github.com/duyhominhnguyen/LVM-Med) | ✅ | Development |
-| 2022 | X-ray | Expert-level detection of pathologies from unannotated chest X-ray images via self-supervised learning | [Nature BME](https://www.nature.com/articles/s41551-022-00936-9) | - | ✅ | Development |
-| 2023 | Multi-modal | Segment Anything in Medical Images (MedSAM) | [arXiv](https://arxiv.org/abs/2304.12306) | [GitHub](https://github.com/bowang-lab/MedSAM) | ✅ | Adaptation |
-| 2023 | Multi-modal | Medical SAM Adapter | [arXiv](https://arxiv.org/pdf/2304.12620.pdf) | [GitHub](https://github.com/WuJunde/Medical-SAM-Adapter) | ✅ | Adaptation |
-| 2023 | Multi-modal | SAMed: Customized Segment Anything Model for Medical Image Segmentation | [arXiv](https://arxiv.org/pdf/2304.13785.pdf) | [GitHub](https://github.com/hitachinsk/SAMed) | ✅ | Adaptation |
-| 2023 | Multi-modal | SAM-Med2D | [arXiv](https://arxiv.org/pdf/2308.16184.pdf) | [GitHub](https://github.com/uni-medical/SAM-Med2D) | ✅ | Adaptation |
-| 2023 | Multi-modal | SAM-U: Multi-box prompts triggered uncertainty estimation for reliable SAM | [arXiv](https://arxiv.org/pdf/2307.04973.pdf) | - | ✅ | Improvement |
-| 2023 | Multi-modal | AutoSAM: How to Efficiently Adapt Large Segmentation Model to Medical Images | [arXiv](https://arxiv.org/pdf/2306.13731.pdf) | [GitHub](https://github.com/xhu248/AutoSAM) | ✅ | Adaptation |
+| Year | Modality | Title | Journal | Model Backbone | Input Resolution | Dataset Scale | Code | Weights | Key Feature |
+|------|----------|-------|---------|---|---|---|---|---|---|
+| 2025 | MRI, 2D | MRI-CORE: A Foundation Model for Magnetic Resonance Imaging | arXiv | ViT-Base | 1024×1024 | 116.8k volumes, 6.9M slices | [GitHub](https://github.com/mazurowski-lab/mri_foundation) | [Google Drive](https://drive.google.com/file/d/1nPkTI3H0vsujlzwY8jxjKwAbOCTJv4yW/view) | MIM+DINOv2 |
+| 2025 | MRI, 3D | Triad: Vision Foundation Model for 3D Magnetic Resonance Imaging | arXiv | SwinTransformer | Adaptive | 131K volumes | [GitHub](https://github.com/wangshansong1/Triad) | - | VoCo v2 |
 
 ---
 
-### Contrastive Learning
+### CT Models
 
-| Year | Modality | Title | Paper | Code | Weights | Method |
-|------|----------|-------|-------|------|---------|--------|
-| 2023 | X-ray | Enhancing Representation in Radiography-Reports Foundation Model: Masked Contrastive Learning | [arXiv](https://arxiv.org/pdf/2309.05904.pdf) | - | ✅ | Development |
-| 2023 | Pathology | PLIP: A visual-language foundation model for pathology image analysis using medical Twitter | [Nature Medicine](https://www.nature.com/articles/s41591-023-02504-3) | [GitHub](https://tinyurl.com/webplip) | ✅ | Development |
-| 2023 | X-ray | ELIXR: Towards a general purpose X-ray AI system | [arXiv](https://arxiv.org/abs/2308.01317) | - | ✅ | Development |
-| 2023 | Multi-modal | KoBo: Knowledge Boosting Medical Contrastive Vision-Language Pre-Training | [MICCAI](https://arxiv.org/pdf/2307.07246.pdf) | [GitHub](https://github.com/ChenXiaoFei-CS/KoBo) | ✅ | Development |
-| 2023 | Pathology | CITE: Text-guided Foundation Model Adaptation for Pathological Image Classification | [MICCAI](https://arxiv.org/abs/2307.14901) | [GitHub](https://github.com/Yunkun-Zhang/CITE) | ✅ | Adaptation |
-| 2023 | Pathology | Visual Language Pretrained Multiple Instance Zero-Shot Transfer for Histopathology | [CVPR](https://openaccess.thecvf.com/content/CVPR2023/papers/Lu_Visual_Language_Pretrained_Multiple_Instance_Zero-Shot_Transfer_for_Histopathology_Images_CVPR_2023_paper.pdf) | - | ✅ | Application |
-| 2023 | Multi-modal | BiomedCLIP: Large-Scale Domain-Specific Pretraining for Biomedical Vision-Language | [arXiv](https://arxiv.org/abs/2303.00915) | [GitHub](https://aka.ms/biomedclip) | ✅ | Development |
-| 2023 | Multi-modal | PTUnifier: Towards Unifying Medical Vision-and-Language Pre-training via Soft Prompts | [arXiv](https://arxiv.org/pdf/2302.08958.pdf) | [GitHub](https://github.com/zhjohnchan/PTUnifier) | ✅ | Development |
-| 2023 | Multi-modal | Learning to Exploit Temporal Structure for Biomedical Vision Language Processing | [CVPR](https://arxiv.org/pdf/2301.04558.pdf) | - | ✅ | Development |
-| 2023 | Multi-modal | CLIP-Driven Universal Model for Organ Segmentation and Tumor Detection | [ICCV](https://arxiv.org/abs/2301.00785) | [GitHub](https://github.com/ljwztc/CLIP-Driven-Universal-Model) | ✅ | Application |
-| 2022 | Multi-modal | MedCLIP: Contrastive Learning from Unpaired Medical Images and Text | [EMNLP](https://arxiv.org/pdf/2210.10163.pdf) | [GitHub](https://github.com/RyanWangZf/MedCLIP) | ✅ | Development |
+| Year | Modality | Title | Journal | Model Backbone | Input Resolution | Dataset Scale | Code | Weights | Key Feature |
+|------|----------|-------|---------|---|---|---|---|---|---|
+| 2025 | CT/MR, 2D | Curia: A Multi-Modal Foundation Model for Radiology | arXiv | ViT-B/L | 512×512 | 228M DICOM files (164M CT, 64M MR) | [HuggingFace](https://huggingface.co/raidium/curia) | [HuggingFace](https://huggingface.co/raidium/curia) | DINOv2 |
+| 2024 | CT, 3D | VoCo: A Simple-yet-Effective Volume Contrastive Learning Framework for 3D Medical Image Analysis | CVPR | SwinUNETR | 384, 64 | 1.6k CT scans | [GitHub](https://github.com/Luffy03/VoCo) | [HuggingFace](https://huggingface.co/Luffy503/VoCo) | VoCo |
+| 2025 | CT, 3D | Vision Foundation Models for Computed Tomography (CT-FM) | arXiv | SegResNet | 24×128×128 | 148K scans | [GitHub](https://github.com/project-lighter/CT-FM) | [HuggingFace](https://huggingface.co/project-lighter) | Sim-CLR |
+| 2025 | CT, 3D | Developing Generalist Foundation Models from a Multimodal Dataset for 3D Computed Tomography (CT-CLIP) | arXiv | ViT-B | - | 25.6k | [HuggingFace](https://huggingface.co/ibrahimethemhamamci/CT-CLIP) | [HuggingFace](https://huggingface.co/datasets/ibrahimhamamci/CT-RATE) | CLIP |
+| 2025 | CT, 3D | Merlin: Vision Language Foundation Model for 3D Computed Tomography | arXiv | ResNet152 | - | 15.3K paired CT scans | [GitHub](https://github.com/StanfordMIMI/Merlin) | [HuggingFace](https://huggingface.co/stanfordmimi/Merlin) | CLIP |
+| 2025 | CT, 3D | TAP-CT: 3D Task-Agnostic Pretraining of Computed Tomography Foundation Models | arXiv | ViT-Base (adaption) | 12×224×224 | 105K volumes | [HuggingFace](https://huggingface.co/fomofo/tap-ct-b-3d) | [HuggingFace](https://huggingface.co/fomofo/tap-ct-b-3d) | - |
 
 ---
 
-### Mixed/Hybrid Architecture
+### Ultrasound Models
 
-| Year | Modality | Title | Paper | Code | Weights | Method |
-|------|----------|-------|-------|------|---------|--------|
-| 2023 | 3D Medical | MedBLIP: Bootstrapping Language-Image Pre-training from 3D Medical Images and Texts | [arXiv](https://arxiv.org/pdf/2305.10799.pdf) | [GitHub](https://github.com/Qybc/MedBLIP) | ✅ | Development |
-| 2023 | Multi-modal | Med-Flamingo: a Multimodal Medical Few-shot Learner | [arXiv](https://arxiv.org/abs/2307.15189) | [GitHub](https://github.com/snap-stanford/med-flamingo) | ✅ | Development |
-| 2022 | X-ray | Clinical-BERT: Vision-Language Pre-training for Radiograph Diagnosis and Reports Generation | [AAAI](https://ojs.aaai.org/index.php/AAAI/article/view/20204) | - | ✅ | Development |
-| 2023 | Multi-modal | Vision-Language Model for Visual Question Answering in Medical Imagery | [Bioengineering](https://www.mdpi.com/2306-5354/10/3/380) | - | ✅ | Application |
+| Year | Modality | Title | Journal | Model Backbone | Input Resolution | Dataset Scale | Code | Weights | Key Feature |
+|------|----------|-------|---------|---|---|---|---|---|---|
+| 2025 | US, 2D | URFM: A general Ultrasound Representation Foundation Model for advancing ultrasound image diagnosis | Iscience | ViT-Base | 224×224 | 1M images | [GitHub](https://github.com/sonovision-ai/URFM) | [HuggingFace](https://huggingface.co/QingboKang/URFM) | MIM+KD |
+| 2024 | US, 2D | USFM: A universal ultrasound foundation model generalized to tasks and organs towards label efficient image analysis | MIA | ViT-Base | 224×224 | 3M | [GitHub](https://github.com/openmedlab/USFM) | [Google Drive](https://drive.google.com/file/d/1KRwXZgYterH895Z8EpXpR1L1eSMMJo4q/view) | MIM (spatial, frequency) |
+| 2025 | US, 2D | TinyUSFM: Towards Compact and Efficient Ultrasound Foundation Models | arXiv | ViT-Tiny | 224×224 | 200k coreset images | [GitHub](https://github.com/MacDunno/TinyUSFM) | [Google Drive](https://drive.google.com/file/d/15R3hnH0ILO39rE1gs-UgJonRqbaYTSRB/view) | Coreset+KD |
+| 2025 | US, 2D | A Fully Open and Generalizable Foundation Model for Ultrasound Clinical Applications (EchoCare) | arXiv | Swin Transformer | 256×256 | 4.5M | [GitHub](https://github.com/CAIR-HKISI/EchoCare) | Coming soon | MIM+Metadata CLS |
+| 2024 | US, 2D | Privacy-Preserving Federated Foundation Model for Generalist Ultrasound Artificial Intelligence (UltraFedFM) | arXiv | - | - | 1M images | [GitHub](https://github.com/yuncheng97/UltraFedFM) | [SharePoint](https://cuhko365-my.sharepoint.com/personal/220019054_link_cuhk_edu_cn/_layouts/15/onedrive.aspx) | FL+MIM |
 
 ---
 
-### Medical Multimodal Large Language Models (MLLM)
+### Fundus Models
 
-#### General Medical MLLMs
+| Year | Modality | Title | Journal | Model Backbone | Input Resolution | Dataset Scale | Code | Weights | Key Feature |
+|------|----------|-------|---------|---|---|---|---|---|---|
+| 2025 | Fundus, 2D | Enhancing diagnostic accuracy in rare and common fundus diseases with a knowledge-rich vision-language model (RetiZero) | Nature Communications | RETFound | 224×224 | 342K images | [GitHub](https://github.com/LooKing9218/RetiZero) | [Google Drive](https://drive.google.com/file/d/14bMmnefO73_NL1Xc4x0A5qFNbuI7GqKM/view) | CLIP, MAE weight |
+| 2024 | Fundus, 2D | MM-Retinal: Knowledge-Enhanced Foundational Pretraining with Fundus Image-Text Expertise (KeepFIT) | MICCAI | ResNet50 | 800×800 | 4.3K image-text pairs | [GitHub](https://github.com/lxirich/MM-Retinal) | [Google Drive](https://drive.google.com/drive/folders/1hPDt9noBnlL75mBpNKtfaYmTr4oQJBjP) | CLIP |
+| 2024 | Fundus, 2D | EyeFound: A Multimodal Generalist Foundation Model for Ophthalmic Imaging | arXiv | RETFound | 224×224 | 2.78 million images | - | - | MIM |
+| 2024 | Fundus, 2D | UrFound: Towards Universal Retinal Foundation Models via Knowledge-Guided Masked Modeling | MICCAI | ViT-base | 224×224 | 180k retinal images | [HuggingFace](https://huggingface.co/yyyyk/UrFound) | [HuggingFace](https://huggingface.co/yyyyk/UrFound) | MIM+MLM |
+| 2024 | Fundus, 2D | A Disease-Specific Foundation Model Using Over 100K Fundus Images | arXiv | ResNet50 | 256, 512, 1024 | 0.1 million retinal images | [GitHub](https://github.com/Jang-Boa/Research-Foundation-Retina) | - | ImageNet+Fundus, SP, 2-step |
+| 2025 | Fundus, 2D | A multimodal visual–language foundation model for computational ophthalmology (EyeCLIP) | npjDM | ViT-B/16 | 224×224 | 2.77 million | [GitHub](https://github.com/Michi-3000/EyeCLIP) | [Google Drive](https://drive.google.com/file/d/1u_pUJYPppbprVQQ5jaULEKKp-eJqaVw6/view) | CLIP+MIM |
+| 2024 | Fundus, 2D | VisionUnite: A Vision-Language Foundation Model for Ophthalmology Enhanced with Clinical Knowledge | TPAMI | eva02_base_patch14_448 | 448 | 1.24 million image-text pairs | [GitHub](https://github.com/HUANGLIZI/VisionUnite) | [Google Drive](https://drive.google.com/file/d/1kbdpPklCdDxEgxcpsp4OgGjxvxKh5jpV/view) | CLIP+LLM |
+| 2023 | Fundus, 2D | A foundation model for generalizable disease detection from retinal images (RETFound) | Nature | ViT-large | 224×224 | 1.6 million retinal images | [GitHub](https://github.com/rmaphoh/RETFound) | [HuggingFace](https://huggingface.co/YukunZhou) | MIM |
+| 2024 | Fundus, 2D | VisionFM: A Vision Foundation Model for Generalist Ophthalmic Artificial Intelligence | NEJM AI | ViT-Base | 224×224 | 3.4 million ophthalmic images | [GitHub](https://github.com/ABILab-CUHK/VisionFM) | [GitHub](https://github.com/ABILab-CUHK/VisionFM) | iBOT |
+| 2025 | Fundus, 2D | A Foundation Language-Image Model of the Retina (FLAIR): encoding expert knowledge in text supervision | MIA | ResNet-50 | 512×512 | 288k images | [GitHub](https://github.com/jusiro/FLAIR) | - | CLIP |
 
-| Year | Modality | Title | Paper | Code | Weights | Method |
-|------|----------|-------|-------|------|---------|--------|
-| 2023 | Multi-modal | Med-PaLM 2: Towards Generalist Biomedical AI | [arXiv](https://arxiv.org/abs/2307.14334) | - | ✅ | Development |
-| 2023 | Multi-modal | BiomedGPT: A Unified and Generalist Biomedical Generative Pre-trained Transformer | [arXiv](https://arxiv.org/pdf/2305.17100.pdf) | [GitHub](https://github.com/taokz/BiomedGPT) | ✅ | Development |
-| 2023 | Text | Med-PaLM: Towards Expert-Level Medical Question Answering with Large Language Models | [arXiv](https://arxiv.org/pdf/2305.09617.pdf) | - | ✅ | Development |
-| 2023 | Multi-modal | Foundation models for generalist medical artificial intelligence | [Nature](https://www.nature.com/articles/s41586-023-05881-4) | - | ✅ | Review |
-| 2023 | Multi-modal | Generalist Vision Foundation Models for Medical Imaging: SAM Case Study | [Diagnostics](https://arxiv.org/pdf/2304.12637v2.pdf) | [GitHub](https://github.com/hwei-hw/Generalist_Vision_Foundation_Models_for_Medical_Imaging) | ✅ | Application |
+---
 
-#### Specialized Medical MLLMs
+### Histopathology Models
 
-| Year | Modality | Title | Paper | Code | Weights | Method |
-|------|----------|-------|-------|------|---------|--------|
-| 2023 | Radiology | Radiology-Llama2: Best-in-Class Large Language Model for Radiology | [arXiv](https://arxiv.org/abs/2309.06419) | - | ✅ | Development |
-| 2023 | Radiology | RadFM: Towards Generalist Foundation Model for Radiology | [arXiv](https://arxiv.org/abs/2308.02463) | [GitHub](https://github.com/chaoyi-wu/RadFM) | ✅ | Development |
-| 2023 | Clinical | ClinicalGPT: Large Language Models Finetuned with Diverse Medical Data | [arXiv](https://arxiv.org/abs/2306.09968) | - | ✅ | Development |
-| 2023 | X-ray | XrayGPT: Chest Radiographs Summarization using Medical Vision-Language Models | [arXiv](https://arxiv.org/abs/2306.07971) | [GitHub](https://github.com/mbzuai-oryx/XrayGPT) | ✅ | Development |
-| 2023 | Multi-modal | LLaVA-Med: Training a Large Language-and-Vision Assistant for Biomedicine in One Day | [arXiv](https://arxiv.org/abs/2306.00890) | [GitHub](https://github.com/microsoft/LLaVA-Med) | ✅ | Development |
-| 2023 | Text | PMC-LLaMA: Towards Building Open-source Language Models for Medicine | [arXiv](https://arxiv.org/abs/2304.14454) | [GitHub](https://github.com/chaoyi-wu/PMC-LLaMA) | ✅ | Development |
-| 2023 | Multi-modal | Visual Med-Alpaca: A Parameter-Efficient Biomedical LLM with Visual Capabilities | [GitHub](https://github.com/cambridgeltl/visual-med-alpaca) | [GitHub](https://github.com/cambridgeltl/visual-med-alpaca) | ✅ | Development |
-| 2023 | Text | ChatDoctor: A Medical Chat Model Fine-Tuned on LLaMA | [Cureus](https://arxiv.org/abs/2303.14070) | [GitHub](https://github.com/Kent0n-Li/ChatDoctor) | ✅ | Development |
-| 2023 | Text | DeID-GPT: Zero-shot Medical Text De-Identification by GPT-4 | [arXiv](https://arxiv.org/pdf/2303.11032.pdf) | [GitHub](https://github.com/yhydhx/ChatGPT-API) | ✅ | Application |
-| 2023 | Multi-modal | ChatCAD: Interactive Computer-Aided Diagnosis using Large Language Models | [arXiv](https://arxiv.org/abs/2302.07257) | - | ✅ | Application |
+| Year | Modality | Title | Journal | Model Backbone | Input Resolution | Dataset Scale | Code | Weights | Key Feature |
+|------|----------|-------|---------|---|---|---|---|---|---|
+| 2024 | Histopath, 2D | Towards a general-purpose foundation model for computational pathology (UNI) | Nature Medicine | ViT-l/16 | 224×224 | 100,426 WSIs | [GitHub](https://github.com/mahmoodlab/UNI) | [GitHub](https://github.com/mahmoodlab/UNI) | DINOv2 |
+| 2024 | Histopath, 2D | A visual-language foundation model for computational pathology (CONCH) | Nature Medicine | conch_ViT-B-16 | 224×224 | 1.17 million image-caption pairs | [GitHub](https://github.com/mahmoodlab/CONCH) | [HuggingFace](https://huggingface.co/mahmoodlab/CONCH) | DINOv2 |
+| 2024 | Histopath, 2D | A multimodal whole-slide foundation model for pathology (TITAN) | Nature Medicine | ViT-B-16 | 512×512 | 335,645 WSIs | [GitHub](https://github.com/mahmoodlab/TITAN) | [HuggingFace](https://huggingface.co/mahmoodlab/TITAN) | iBOT+CLIP |
+| 2024 | Histopath, 2D | Virchow: A Million-Slide Digital Pathology Foundation Model | arXiv | ViT-H/14 | 224×224 | 1.5M whole slide histopathology images | [HuggingFace](https://huggingface.co/paige-ai/Virchow) | [HuggingFace](https://huggingface.co/paige-ai/Virchow) | DINOv2 |
+| 2023-2024 | Histopath, 2D | Scaling Self-Supervised Learning for Histopathology with Masked Image Modeling (Phikon v2) | arXiv | iBOT ViT | 224×224 | 450M 20x magnification histology images | [HuggingFace](https://huggingface.co/owkin/phikon-v2) | [HuggingFace](https://huggingface.co/owkin/phikon-v2) | iBOT, DINOv2 |
+| 2024 | Histopath, 2D | A pathology foundation model for cancer diagnosis and prognosis prediction (CHIEF) | Nature | ViT | 224×224 | 60,530 whole-slide images (WSIs) | [GitHub](https://github.com/hms-dbmi/CHIEF) | [GitHub](https://github.com/hms-dbmi/CHIEF) | CLIP |
+| 2025 | Histopath, 2D | A generalizable pathology foundation model using a unified knowledge distillation pretraining framework (GPFM) | Nature BME | ViT | 512×512 | 190 million image-level samples | [GitHub](https://github.com/birkhoffkiki/GPFM/) | [HuggingFace](https://huggingface.co/majiabo/GPFM) | Novel Distillation |
+| 2023 | Histopath, 2D | Quilt-1M: One Million Image-Text Pairs for Histopathology (Quilt-Net) | NeurIPS | ViT-B | 512×512 | 802,148 image and text pairs | [GitHub](https://github.com/wisdomikezogwo/quilt1m) | [HuggingFace](https://huggingface.co/wisdomik/QuiltNet-B-32) | CLIP |
+| 2023 | Histopath, 2D | Pathology Language and Image Pre-Training (PLIP) | Nature Medicine | ViT | 224×224 | 208,414 pathology images with natural language descriptions | [GitHub](https://github.com/PathologyFoundation/plip) | [HuggingFace](https://huggingface.co/vinid/plip) | CLIP |
+
+---
+
+### X-ray Models
+
+| Year | Modality | Title | Journal | Model Backbone | Input Resolution | Dataset Scale | Code | Weights | Key Feature |
+|------|----------|-------|---------|---|---|---|---|---|---|
+| 2025 | X-ray, 2D | A fully open AI foundation model applied to chest radiography (Ark+) | Nature | Swin-Large | 768×768 | 704k images | [GitHub](https://github.com/jlianglab/Ark) | [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfQ0XLZRNUwbFPLzQo9cDWelHvt84q2Vh5_wS0Tu9Mt8PIAwQ/viewform) | Multi-task, KD, Supervised |
+| 2024 | X-ray, 2D | Health AI Developer Foundations (CXR-FM) | - | EfficientNet-L2 | 1024×1024 | 821k images | [GitHub](https://github.com/google-health/cxr-foundation) | [HuggingFace](https://huggingface.co/google/cxr-foundation) | - |
+| 2024 | X-ray, 2D | Exploring scalable medical image encoders beyond text supervision (RAD-DINO) | Nature MI | ViT-Base | 518×518 | 882k images | [HuggingFace](https://huggingface.co/microsoft/rad-dino) | [HuggingFace](https://huggingface.co/microsoft/rad-dino) | DINOv2 |
+| 2022 | X-ray, 2D | Benchmarking and Boosting Transformers for Medical Image Classification (MIM-CXR) | MICCAI | Swin-Base | 224×224 | 926k images | [GitHub](https://github.com/JLiangLab/BenchmarkTransformers) | [GitHub](https://github.com/jlianglab/BenchmarkTransformers) | SimMIM |
+| 2023 | X-ray, 2D | CheSS: Chest X-Ray Pre-trained Model via Self-supervised Contrastive Learning | JDI | ResNet-50 | 512×512 | 4.8M images | [GitHub](https://github.com/mi2rl/CheSS) | [Google Drive](https://drive.usercontent.google.com/download?id=1IfiuQdKV7en9DFaB0NqNdsDkVbdyoVyD) | MoCo v2 |
+| 2023 | X-ray, 2D | Knowledge-enhanced Visual-Language Pre-training on Chest Radiology Images (KAD) | Nature Communications | ResNet-50 | 512×512 | 377k images | [GitHub](https://github.com/xiaoman-zhang/KAD) | [Google Drive](https://drive.google.com/drive/folders/1ArEgk-VNKZnXd5Fjkf6tiNA4YvBDZCCF) | CLIP |
+| 2024 | X-ray, 2D | A Vision-Language Foundation Model to Enhance Efficiency of Chest X-ray Interpretation (CheXagent) | arXiv | SigLIP-Large | 512×512 | 8.5 million training samples | - | - | MLLM |
+| 2025 | X-ray, 2D | A Vision-Language Foundation Model to Enhance Efficiency of Chest X-ray Interpretation (CheXFound) | TMI | ViT-L | 512×512 | 987K unique CXRs | [GitHub](https://github.com/RPIDIAL/CheXFound) | [Google Drive](https://drive.google.com/drive/folders/1GX2BWbujuVABtVpSZ4PTBykGULzrw806) | DINOv2 |
+
+---
+
+### Dermatology Models
+
+| Year | Modality | Title | Journal | Model Backbone | Input Resolution | Dataset Scale | Code | Weights | Key Feature |
+|------|----------|-------|---------|---|---|---|---|---|---|
+| 2024 | Derm | Health AI Developer Foundations | - | BiT-M ResNet101x3 | 448×448 | Over 16K natural and dermatology images | [Google Developers](https://developers.google.com/health-ai-developer-foundations/derm-foundation) | [HuggingFace](https://huggingface.co/google/derm-foundation) | ConVIRT |
+| 2025 | Derm | A multimodal vision foundation model for clinical dermatology (PanDerm) | Nature Medicine | ViT-L/16 | 224×224 | 2 million skin disease images | [GitHub](https://github.com/SiyuanYan1/PanDerm) | [GitHub](https://github.com/SiyuanYan1/PanDerm) | CLIP |
+| 2024 | Derm | Transparent medical image AI via an image–text foundation model grounded in medical literature (MONET) | Nature Medicine | ViT-L/14 | 224×224 | 105,550 dermatological image–text pairs | [GitHub](https://github.com/suinleelab/MONET) | [AIMS Lab](https://aimslab.cs.washington.edu/MONET/weight_clip.pt) | CLIP |
+| 2025 | Derm | Derm1M: A Million-scale Vision-Language Dataset Aligned with Clinical Ontology Knowledge for Dermatology (DermLIP/DermLIP-PanDerm) | ICCV | ViT-Base/16 | 224×224 | 1,029,761 dermatological image–text pairs | [GitHub](https://github.com/SiyuanYan1/Derm1M) | [HuggingFace](https://huggingface.co/redlessone/DermLIP_ViT-B-16) | CLIP |
+
+---
+
+### Microscopy Models
+
+| Year | Modality | Title | Journal | Model Backbone | Input Resolution | Dataset Scale | Code | Weights | Key Feature |
+|------|----------|-------|---------|---|---|---|---|---|---|
+| 2025 | Microscopy | Unifying the Electron Microscopy Multiverse through a Large-scale Foundation Model (EM-DINO) | bioRxiv | - | - | 5.5 million 2D EM images | - | - | DINOv2 |
+| 2025 | Microscopy | A Self-Supervised Foundation Model for Robust and Generalizable Representation Learning in STED Microscopy | bioRxiv | ViT | 224×224 | 37,387 images | [GitHub](https://github.com/FLClab/STED-FM) | [GitHub](https://github.com/FLClab/STED-FM) | MAE |
+| 2024 | Microscopy | ViTally Consistent: Scaling Biological Representation Learning for Cell Microscopy | CVPR | ViT-G/8 | 256×256 | 8 billion microscopy image crops | [GitHub](https://github.com/recursionpharma/maes_microscopy) | [HuggingFace](https://huggingface.co/recursionpharma/OpenPhenom) | MAE |
 
 ---
 
@@ -107,15 +141,6 @@ We strongly encourage authors of relevant works to make a pull request and add t
 
 We welcome contributions! Please feel free to submit a pull request to add new papers or update existing information. When adding new papers, please follow the existing format and ensure the information is accurate and complete.
 
-## Acknowledgements
-
-This repository is inspired by and partially inherits content from [Awesome Foundation Models in Medical Imaging](https://github.com/xmindflow/Awesome-Foundation-Models-in-Medical-Imaging). We thank the original authors for their excellent survey work:
-
-**Foundational Models in Medical Imaging: A Comprehensive Survey and Future Vision**<br>
-*Bobby Azad, Reza Azad, Sania Eskandari, Afshin Bozorgpour, Amirhossein Kazerouni, Islem Rekik, Dorit Merhof*<br>
-[28th Oct., 2023] [arXiv, 2023]<br>
-[[Paper](https://arxiv.org/abs/2310.18689)]
-
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details. 
+This project is licensed under the MIT License - see the LICENSE file for details.

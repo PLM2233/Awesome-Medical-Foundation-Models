@@ -17,6 +17,8 @@ This repository provides the latest curated list of foundation models in medical
 - **X-ray**: Chest X-ray and radiography models
 - **Dermatology**: Skin disease and dermatology imaging models
 - **Microscopy**: Electron and cellular microscopy models
+- **Generalist Medical**: Cross-modality multimodal foundation models
+- **Medical MLLM**: Medical multimodal large language models
 
 We strongly encourage authors of relevant works to make a pull request and add their paper's information.
 
@@ -29,6 +31,8 @@ We strongly encourage authors of relevant works to make a pull request and add t
 - [X-ray Models](#x-ray-models)
 - [Dermatology Models](#dermatology-models)
 - [Microscopy Models](#microscopy-models)
+- [Generalist Medical Models](#generalist-medical-models)
+- [Medical MLLM Models](#medical-mllm-models)
 
 ---
 
@@ -134,6 +138,28 @@ We strongly encourage authors of relevant works to make a pull request and add t
 | 2025 | **EM-DINO**: Electron Microscopy Foundation Model | bioRxiv | - | - | 5.5M images | - | - | DINOv2 |
 | 2025 | **STED-FM**: Self-Supervised STED Microscopy Model | bioRxiv | ViT | 224×224 | 37K images | [✓](https://github.com/FLClab/STED-FM) | [✓](https://github.com/FLClab/STED-FM) | MAE |
 | 2024 | **OpenPhenom**: Cell Microscopy Foundation Model | CVPR | ViT-G/8 | 256×256 | 8B crops | [✓](https://github.com/recursionpharma/maes_microscopy) | [✓](https://huggingface.co/recursionpharma/OpenPhenom) | MAE |
+
+---
+
+### Generalist Medical Models
+
+| Year | Title | Journal | Model | Resolution | Scale | Code | Weights | Key Feature |
+|:----:|--------|---------|---------|:----------:|--------|:---:|:-------:|---|
+| 2025 | **BIOMEDICA**: An Open Biomedical Image-Caption Archive, Dataset, and Vision-Language Models Derived from Scientific Literature (BMCA-CLIP) | arXiv | ViT-L-14 | 224×224 | 24 million unique image-text pairs from over 6 million articles | [✓](https://github.com/Ale9806/open_clip_with_biomedica) | [✓](https://huggingface.co/BIOMEDICA) | CLIP |
+| 2025 | **MEDICALNARRATIVES**: Connecting Medical Vision and Language with Localized Narratives (GenMedClip) | arXiv | ViT-Base | 224×224 | 4.7M image-text pairs from videos and articles, with 1M samples containing dense annotations | - | [✓](https://huggingface.co/wisdomik/GenMedClip) | CLIP |
+| 2025 | **BiomedCLIP**: A multimodal biomedical foundation model pretrained from fifteen million scientific image-text pairs | arXiv | ViT-Base | 224×224 | 15 million figure-caption pairs | [✓](https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224) | [✓](https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224) | CLIP |
+| 2021 | **PubMedCLIP**: Does CLIP Benefit Visual Question Answering in the Medical Domain as Much as it Does in the General Domain? | EACL | ViT-B, RN50 | 224×224 | 80K samples | [✓](https://github.com/sarahESL/PubMedCLIP) | [✓](https://huggingface.co/sarahESL/PubMedCLIP) | CLIP |
+| 2023 | **PMC-CLIP**: Contrastive Language-Image Pre-training using Biomedical Documents | arXiv | ViT-L, RN50 | 224×224 | 1.6M image-caption pairs | [✓](https://github.com/WeixiongLin/PMC-CLIP) | [✓](https://huggingface.co/datasets/axiong/pmc_oa) | CLIP |
+
+---
+
+### Medical MLLM Models
+
+| Year | Title | Journal | Model | Resolution | Scale | Code | Weights | Key Feature |
+|:----:|--------|---------|---------|:----------:|--------|:---:|:-------:|---|
+| 2025 | **Lingshu**: A Generalist Foundation Model for Unified Multimodal Medical Understanding and Reasoning | arXiv | ViT-Huge-like | Adaptive | 5.05M medical multimodal and textual data | [✓](https://github.com/QwenLM/Qwen3-VL) | [✓](https://huggingface.co/collections/lingshu-medical-mllm/lingshu-mllms) | MLLM |
+| 2025 | **UniMedVL**: Unifying Medical Multimodal Understanding and Generation through Observation-Knowledge-Analysis | arXiv | MoT | Adaptive | UniMed-5M | [✓](https://github.com/uni-medical/UniMedVL) | [✓](https://huggingface.co/General-Medical-AI/UniMedVL) | MLLM |
+| 2025 | **Hulu-Med**: A Transparent Generalist Model towards Holistic Medical Vision-Language Understanding | arXiv | SigLIP-2D/3D | Adaptive | multimodal dataset of 16.7 million samples | [✓](https://github.com/ZJUI-AI4H/Hulu-Med) | [✓](https://huggingface.co/ZJU-AI4H/Hulu-Med-32B) | MLLM |
 
 ---
 

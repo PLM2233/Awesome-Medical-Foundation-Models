@@ -17,6 +17,7 @@ This repository provides the latest curated list of foundation models in medical
 - **X-ray**: Chest X-ray and radiography models
 - **Dermatology**: Skin disease and dermatology imaging models
 - **Microscopy**: Electron and cellular microscopy models
+- **Endoscopy**: Endoscopic imaging and video analysis models
 - **Generalist Medical**: Cross-modality multimodal foundation models
 - **Medical MLLM**: Medical multimodal large language models
 
@@ -31,6 +32,7 @@ We strongly encourage authors of relevant works to make a pull request and add t
 - [X-ray Models](#x-ray-models)
 - [Dermatology Models](#dermatology-models)
 - [Microscopy Models](#microscopy-models)
+- [Endoscopy Models](#endoscopy-models)
 - [Generalist Medical Models](#generalist-medical-models)
 - [Medical MLLM Models](#medical-mllm-models)
 
@@ -116,7 +118,7 @@ We strongly encourage authors of relevant works to make a pull request and add t
 | 2023 | **CheSS**: Chest X-Ray Pre-trained Model via Self-supervised Contrastive Learning | JDI | ResNet-50 | 512×512 | 4.8M images | [✓](https://github.com/mi2rl/CheSS) | [✓](https://drive.usercontent.google.com/download?id=1IfiuQdKV7en9DFaB0NqNdsDkVbdyoVyD&export=download&authuser=0) | MoCo v2 |
 | 2023 | **KAD**: Knowledge-enhanced Visual-Language Pre-training on Chest Radiology Images | NC | ResNet-50 | 512×512 | 377k images | [✓](https://github.com/xiaoman-zhang/KAD) | [✓](https://drive.google.com/drive/folders/1ArEgk-VNKZnXd5Fjkf6tiNA4YvBDZCCF?usp=sharing) | CLIP |
 | 2024 | **CheXagent**: A Vision-Language Foundation Model to Enhance Efficiency of Chest X-ray Interpretation | arXiv | SigLIP-Large | 512×512 | 8.5 million training samples | - | - | MLLM |
-| 2025 | **CheXFound**: A Vision-Language Foundation Model to Enhance Efficiency of Chest X-ray Interpretation | TMI | ViT-L | 512×512 | 987K unique CXRs | [✓](https://github.com/RPIDIAL/CheXFound) | [✓](https://drive.google.com/drive/folders/1GX2BWbujuVABtVpSZ4PTBykGULzrw806) | DINOv2 |
+| 2025 | **CheXFound**: Chest X-ray Foundation Model with Global and Local Representations Integration | TMI | ViT-L | 512×512 | 987K unique CXRs | [✓](https://github.com/RPIDIAL/CheXFound) | [✓](https://drive.google.com/drive/folders/1GX2BWbujuVABtVpSZ4PTBykGULzrw806) | DINOv2 |
 | 2022 | **MedCLIP**: Contrastive Learning from Unpaired Medical Images and Text | EMNLP | Swin Transformer | 224×224 | 200K data | [✓](https://github.com/RyanWangZf/MedCLIP) | [✓](https://pypi.org/project/medclip/) | CLIP |
 
 ---
@@ -139,6 +141,16 @@ We strongly encourage authors of relevant works to make a pull request and add t
 | 2025 | **EM-DINO**: Unifying the Electron Microscopy Multiverse through a Large-scale Foundation Model | bioRxiv | - | - | 5.5 million 2D EM images | - | - | DINOv2 |
 | 2025 | **STED-FM**: A Self-Supervised Foundation Model for Robust and Generalizable Representation Learning in STED Microscopy | bioRxiv | ViT | 224×224 | 37,387 images | [✓](https://github.com/FLClab/STED-FM) | [✓](https://github.com/FLClab/STED-FM) | MAE |
 | 2024 | **OpenPhenom**: ViTally Consistent: Scaling Biological Representation Learning for Cell Microscopy | CVPR | ViT-G/8 | 256×256 | 8 billion microscopy image crops | [✓](https://github.com/recursionpharma/maes_microscopy) | [✓](https://huggingface.co/recursionpharma/OpenPhenom) | MAE |
+
+---
+
+### Endoscopy Models
+
+| Year | Title | Journal | Model | Resolution | Scale | Code | Weights | Key Feature |
+|:----:|--------|---------|---------|:----------:|--------|:---:|:-------:|---|
+| 2024 | **Endo-FM**: Foundation Model for Endoscopy Video Analysis via Large-scale Self-supervised Pre-train | MICCAI | ViT-Base, T | 224×224 | 5 million frames | [✓](https://github.com/med-air/Endo-FM) | [✓](https://mycuhk-my.sharepoint.com/personal/1155167044_link_cuhk_edu_hk/_layouts/15/onedrive.aspx?id=%2Fpersonal%2F1155167044%5Flink%5Fcuhk%5Fedu%5Fhk%2FDocuments%2FEndo%2DFM%2Fpretrain%5Fweights%2Fendo%5Ffm%2Epth&parent=%2Fpersonal%2F1155167044%5Flink%5Fcuhk%5Fedu%5Fhk%2FDocuments%2FEndo%2DFM%2Fpretrain%5Fweights&ga=1) | DINO |
+| 2025 | **SurgVISTA**: Large-scale Self-supervised Video Foundation Model for Intelligent Surgery | arXiv | S-T ViT | - | - | - | - | - |
+| 2024 | **EndoViT**: Pretraining vision transformers on a large collection of endoscopic images | IJCARS | ViT-Base | 224×224 | 700,000 images | [✓](https://github.com/DominikBatic/EndoViT) | [✓](https://huggingface.co/egeozsoy/EndoViT) | MAE |
 
 ---
 

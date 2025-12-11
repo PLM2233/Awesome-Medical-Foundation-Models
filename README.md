@@ -163,6 +163,7 @@ We strongly encourage authors of relevant works to make a pull request and add t
 | 2025 | **BiomedCLIP**: A multimodal biomedical foundation model pretrained from fifteen million scientific image-text pairs | arXiv | ViT-Base | 224×224 | 15 million figure-caption pairs | [✓](https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224) | [✓](https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224) | CLIP |
 | 2021 | **PubMedCLIP**: Does CLIP Benefit Visual Question Answering in the Medical Domain as Much as it Does in the General Domain? | EACL | ViT-B, RN50 | 224×224 | 80K samples | [✓](https://github.com/sarahESL/PubMedCLIP) | [✓](https://huggingface.co/sarahESL/PubMedCLIP) | CLIP |
 | 2023 | **PMC-CLIP**: Contrastive Language-Image Pre-training using Biomedical Documents | arXiv | ViT-L, RN50 | 224×224 | 1.6M image-caption pairs | [✓](https://github.com/WeixiongLin/PMC-CLIP) | [✓](https://huggingface.co/datasets/axiong/pmc_oa) | CLIP |
+| 2024 | **UniMed-CLIP**: Towards a Unified Image-Text Pretraining Paradigm for Diverse Medical Imaging Modalities | arXiv | ViT-Base/Large | 224, 336 | 5.3 million image-text pairs | [✓](https://github.com/mbzuai-oryx/UniMed-CLIP) | [✓](https://github.com/mbzuai-oryx/UniMed-CLIP) | CLIP |
 
 ---
 

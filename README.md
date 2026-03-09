@@ -170,10 +170,10 @@ We strongly encourage authors of relevant works to make a pull request and add t
 ---
 
 ### 3D Medical MLLM Models
-| Year | Title | Journal | Model | Resolution | Scale | Code | Weights | Key Feature |
-|:----:|--------|---------|---------|:----------:|--------|:---:|:-------:|---|
-| 2024 | **M3D**: Advancing 3D Medical Image Analysis with Multi-Modal Large Language Models | arXiv | 3D-ViT+LLaMA-2-7B |  120K image-text pairs and 662K instruction-response pairs | [✓]([https://github.com/BAAI-DCAI/M3D]) | [✓](https://huggingface.co/GoodBaiBai88) | 3D MLLM |
-| 2024 | ***RadFM *** Towards generalist foundation model for radiology by leveraging web-scale 2D&3D medical data | NC | 3D-ViT+MedLLaMA-13B |  13M 2D images and 615K 3D scans | [✓]((https://github.com/chaoyi-wu/RadFM)) | [✓](https://huggingface.co/chaoyi-wu/RadFM) | 3D MLLM |
+| Year | Title | Journal | Model | Scale | Code | Weights | Key Feature |
+|:----:|--------|---------|---------|--------|:---:|:-------:|---|
+| 2024 | **M3D**: Advancing 3D Medical Image Analysis with Multi-Modal Large Language Models | arXiv | 3D-ViT+LLaMA-2-7B |  120K image-text pairs and 662K instruction-response pairs | [✓](https://github.com/BAAI-DCAI/M3D) | [✓](https://huggingface.co/GoodBaiBai88) | 3D MLLM |
+| 2024 | **RadFM ** Towards generalist foundation model for radiology by leveraging web-scale 2D&3D medical data | NC | 3D-ViT+MedLLaMA-13B |  13M 2D images and 615K 3D scans | [✓](https://github.com/chaoyi-wu/RadFM) | [✓](https://huggingface.co/chaoyi-wu/RadFM) | 3D MLLM |
 
 
 ## Contributing

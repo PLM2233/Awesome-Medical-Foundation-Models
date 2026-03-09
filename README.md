@@ -11,6 +11,7 @@
 This repository provides the latest curated list of foundation models in medical imaging released during 2024-2025, organized by imaging modality:
 - **MRI**: Magnetic Resonance Imaging models (2D and 3D)
 - **CT**: Computed Tomography models (2D and 3D)
+- **3D**: 3D Models covering CT and MRI
 - **Ultrasound**: Ultrasound imaging models
 - **Fundus**: Retinal/Fundus imaging models
 - **Histopathology**: Digital pathology and histopathology models
@@ -20,6 +21,7 @@ This repository provides the latest curated list of foundation models in medical
 - **Endoscopy**: Endoscopic imaging and video analysis models
 - **Generalist Medical**: Cross-modality multimodal foundation models
 - **Medical MLLM**: Medical multimodal large language models
+- **3D Medical MLLM**: 3D Medical multimodal large language models 
 
 We strongly encourage authors of relevant works to make a pull request and add their paper's information.
 
@@ -186,8 +188,7 @@ We strongly encourage authors of relevant works to make a pull request and add t
 ### 3D Medical MLLM Models
 | Year | Title | Journal | Model | Resolution | Scale | Code | Weights | Key Feature |
 |:----:|--------|---------|---------|:----------:|--------|:---:|:-------:|---|
-| 2024 | **M3D**: Advancing 3D Medical Image Analysis with Multi-Modal Large Language Models | arXiv | 3D-ViT+LLaMA-2-7B |  120K image-text
-pairs and 662K instruction-response pairs | [✓]([https://github.com/BAAI-DCAI/M3D]) | [✓](https://huggingface.co/GoodBaiBai88) | 3D MLLM |
+| 2024 | **M3D**: Advancing 3D Medical Image Analysis with Multi-Modal Large Language Models | arXiv | 3D-ViT+LLaMA-2-7B |  120K image-text pairs and 662K instruction-response pairs | [✓]([https://github.com/BAAI-DCAI/M3D]) | [✓](https://huggingface.co/GoodBaiBai88) | 3D MLLM |
 | 2024 | ***RadFM *** Towards generalist foundation model for radiology by leveraging web-scale 2D&3D medical data | NC | 3D-ViT+MedLLaMA-13B |  13M 2D images and 615K 3D scans | [✓]((https://github.com/chaoyi-wu/RadFM)) | [✓](https://huggingface.co/chaoyi-wu/RadFM) | 3D MLLM |
 
 

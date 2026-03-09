@@ -12,7 +12,7 @@ We strongly encourage authors of relevant works to make a pull request and add t
 ## Contents
 - [MRI Models](#mri-models)
 - [CT Models](#ct-models)
-- [3D Models](#3d-models)
+- [3D Nultimodal Models](#3d-models)
 - [Ultrasound Models](#ultrasound-models)
 - [Fundus Models](#fundus-models)
 - [Histopathology Models](#histopathology-models)

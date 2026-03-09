@@ -26,6 +26,7 @@ We strongly encourage authors of relevant works to make a pull request and add t
 ## Contents
 - [MRI Models](#mri-models)
 - [CT Models](#ct-models)
+- [3D Models](#3d-models)
 - [Ultrasound Models](#ultrasound-models)
 - [Fundus Models](#fundus-models)
 - [Histopathology Models](#histopathology-models)
@@ -35,7 +36,7 @@ We strongly encourage authors of relevant works to make a pull request and add t
 - [Endoscopy Models](#endoscopy-models)
 - [Generalist Medical Models](#generalist-medical-models)
 - [Medical MLLM Models](#medical-mllm-models)
-
+- [3D Medical MLLLM Models](#3d-medical-mllm-models)
 ---
 
 ## Papers
@@ -46,6 +47,7 @@ We strongly encourage authors of relevant works to make a pull request and add t
 |:----:|--------|---------|---------|:----------:|--------|:---:|:-------:|---|
 | 2025 | **MRI-CORE**: A Foundation Model for Magnetic Resonance Imaging | arXiv | ViT-Base | 1024×1024 | 116.8k volumes, 6.9M slices | [✓](https://github.com/mazurowski-lab/mri_foundation) | [✓](https://drive.google.com/file/d/1nPkTI3H0vsujlzwY8jxjKwAbOCTJv4yW/view) | MIM+DINOv2 |
 | 2025 | **Triad**: Vision Foundation Model for 3D Magnetic Resonance Imaging | arXiv | SwinTransformer | Adaptive | 131K volumes | [✓](https://github.com/wangshansong1/Triad) | - | VoCo v2 |
+| 2026 | **Decipher-MR**: A Vision-Language Foundation Model for 3D MRI Representations | arXiv | 3D-ViT-B | 8x8x8 | 200,000 MRI series from over 22,000 studies | [✓]() | - | Dinov2 for vision, CLIP for text |
 
 ---
 
@@ -61,6 +63,10 @@ We strongly encourage authors of relevant works to make a pull request and add t
 | 2025 | **TAP-CT**: 3D Task-Agnostic Pretraining of Computed Tomography Foundation Models | arXiv | ViT-Base (adaptation) | 12×224×224 | 105K volumes | [✓](https://huggingface.co/fomofo/tap-ct-b-3d) | [✓](https://huggingface.co/fomofo/tap-ct-b-3d) | - |
 
 ---
+### 3D Models
+| Year | Title | Journal | Model | Resolution | Scale | Code | Weights | Key Feature |
+|:----:|--------|---------|---------|:----------:|--------|:---:|:-------:|---|
+| 2025 | **3DINO** A generalizable 3D framework and model for self-supervised learning in medical imaging | npj Digital Medicine | ViT-L | 112 | ~100,000 3D scans from over 10 organs | [✓](https://github.com/AICONSlab/3DINO) | [✓](https://huggingface.co/AICONSlab/3DINO-ViT) | DINOv2+3D Adaptor|
 
 ### Ultrasound Models
 
@@ -176,6 +182,14 @@ We strongly encourage authors of relevant works to make a pull request and add t
 | 2025 | **Hulu-Med**: A Transparent Generalist Model towards Holistic Medical Vision-Language Understanding | arXiv | SigLIP-2D/3D | Adaptive | multimodal dataset of 16.7 million samples | [✓](https://github.com/ZJUI-AI4H/Hulu-Med) | [✓](https://huggingface.co/ZJU-AI4H/Hulu-Med-32B) | MLLM |
 
 ---
+
+### 3D Medical MLLM Models
+| Year | Title | Journal | Model | Resolution | Scale | Code | Weights | Key Feature |
+|:----:|--------|---------|---------|:----------:|--------|:---:|:-------:|---|
+| 2024 | **M3D**: Advancing 3D Medical Image Analysis with Multi-Modal Large Language Models | arXiv | 3D-ViT+LLaMA-2-7B |  120K image-text
+pairs and 662K instruction-response pairs | [✓]([https://github.com/BAAI-DCAI/M3D]) | [✓](https://huggingface.co/GoodBaiBai88) | 3D MLLM |
+| 2024 | ***RadFM *** Towards generalist foundation model for radiology by leveraging web-scale 2D&3D medical data | NC | 3D-ViT+MedLLaMA-13B |  13M 2D images and 615K 3D scans | [✓]((https://github.com/chaoyi-wu/RadFM)) | [✓](https://huggingface.co/chaoyi-wu/RadFM) | 3D MLLM |
+
 
 ## Contributing
 

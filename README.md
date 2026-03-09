@@ -4,24 +4,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)
 
-🔥🔥 Latest medical foundation models from 2024-2025 across diverse imaging modalities 🔥🔥
+🔥🔥 Latest medical foundation models from 2024-2026 across diverse imaging modalities 🔥🔥
 
-## Overview
-
-This repository provides the latest curated list of foundation models in medical imaging released during 2024-2025, organized by imaging modality:
-- **MRI**: Magnetic Resonance Imaging models (2D and 3D)
-- **CT**: Computed Tomography models (2D and 3D)
-- **3D**: 3D Models covering CT and MRI
-- **Ultrasound**: Ultrasound imaging models
-- **Fundus**: Retinal/Fundus imaging models
-- **Histopathology**: Digital pathology and histopathology models
-- **X-ray**: Chest X-ray and radiography models
-- **Dermatology**: Skin disease and dermatology imaging models
-- **Microscopy**: Electron and cellular microscopy models
-- **Endoscopy**: Endoscopic imaging and video analysis models
-- **Generalist Medical**: Cross-modality multimodal foundation models
-- **Medical MLLM**: Medical multimodal large language models
-- **3D Medical MLLM**: 3D Medical multimodal large language models 
 
 We strongly encourage authors of relevant works to make a pull request and add their paper's information.
 
